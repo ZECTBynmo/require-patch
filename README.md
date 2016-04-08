@@ -20,7 +20,7 @@ Here's how you'd set that up in your main app file
 main.js
 ```JS
 extend = require('extend');
-var patcher = require('reuqire-patch');
+var patcher = require('require-patch');
 
 patcher.patch(function(globalRequire) {
   globalRequire.copy = function(filepath) {
