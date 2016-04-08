@@ -2,13 +2,14 @@ var RequirePatch = require('./');
 
 RequirePatch.patch(function(globalRequire) {
   globalRequire.patched = function() {};
+
+  var extend = require('extend');
+  globalRequire.copy = function(path) {
+    return extend(true, globalRequire(path), {});
+  };
 });
 
 a = require('./test/a');
 a.test();
 
-B = require('./test/b');
-b = new B
-b.test();
-
-console.log("PATCH SUCCESSFUL!");
+console.log("TESTS SUCCESSFUL!");
