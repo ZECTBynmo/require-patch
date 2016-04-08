@@ -19,7 +19,6 @@ Here's how you'd set that up in your main app file
 
 main.js
 ```JS
-usage = require('./usage');
 extend = require('extend');
 var Patcher = require('reuqire-patch');
 
@@ -28,6 +27,8 @@ patcher.patch(function(globalRequire) {
     return extend(true, {}, globalRequire(filepath));
   }
 });
+
+usage = require('./usage');
 ```
 
 ### Note: Only works in native node environments that don't do static preprocessing of require()'s (Mocha, webpack, etc. don't work)
