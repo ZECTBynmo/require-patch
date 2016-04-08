@@ -1,0 +1,29 @@
+{
+  "name": "require-patch",
+  "version": "0.0.0",
+  "description": "Easily patch the global node require function",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ZECTBynmo/require-patch.git"
+  },
+  "keywords": [
+    "require",
+    "patch",
+    "node",
+    "hook"
+  ],
+  "author": "Mike Vegeto (ZECTBynmo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZECTBynmo/require-patch/issues"
+  },
+  "homepage": "https://github.com/ZECTBynmo/require-patch#readme",
+  "dependencies": {
+    "assert": "^1.3.0",
+    "mocha": "^2.4.5"
+  }
+}
