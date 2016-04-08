@@ -30,4 +30,4 @@ patcher.patch(function(globalRequire) {
 });
 ```
 
-# Note: Only works in native node environments that don't do static preprocessing of require()'s (Mocha, webpack, etc)
+### Note: Only works in native node environments that don't do static preprocessing of require()'s (Mocha, webpack, etc. don't work)
